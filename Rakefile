@@ -17,8 +17,8 @@ Jeweler::Tasks.new do |gem|
   gem.name = "resque_pole_position"
   gem.homepage = "http://github.com/teonimesic/resque_pole_position"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{A resque plugin to add a pole_position method that creates a job at the first position of a queue}
+  gem.description = %Q{A resque plugin to add a pole_position method that creates a job at the first position of a queue}
   gem.email = "teonimesic@gmail.com"
   gem.authors = ["Stefano Diem Benatti"]
   # dependencies defined in Gemfile
@@ -30,14 +30,6 @@ Rake::TestTask.new(:test) do |test|
   test.libs << 'lib' << 'test'
   test.pattern = 'test/**/test_*.rb'
   test.verbose = true
-end
-
-require 'rcov/rcovtask'
-Rcov::RcovTask.new do |test|
-  test.libs << 'test'
-  test.pattern = 'test/**/test_*.rb'
-  test.verbose = true
-  test.rcov_opts << '--exclude "gems/*"'
 end
 
 task :default => :test

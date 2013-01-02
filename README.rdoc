@@ -1,6 +1,6 @@
 = resque_pole_position
 
-Description goes here.
+This gem is a resque plugin, intended to add a Resque.pole_position(klass, *args) method, that queues a job at first position of its queue, intead of the standart behavior of adding it last. Created with resque 1.23.0 in mind.
 
 == Contributing to resque_pole_position
  
